@@ -3,6 +3,7 @@ import cloudflare from "./cloudflare";
 import deno from "./deno";
 import netlify from "./netlify";
 import bun from "./bun";
+import vercel from "./vercel";
 
 export type Adapter = {
   name: string;
@@ -24,4 +25,4 @@ export type Adapter = {
 
 export const Adapter = <T>(target: Adapter): Adapter => target;
 
-export { node, cloudflare, deno, netlify, bun };
+export { node, cloudflare, deno, netlify, bun, vercel };
